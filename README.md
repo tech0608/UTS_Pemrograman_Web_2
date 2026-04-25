@@ -6,14 +6,13 @@
 ---
 
 ### Informasi Ujian
-- **Mata Kuliah / SKS** : Pemrograman Web 2 / 3 SKS
+- **Mata Kuliah**       : Pemrograman Web 2
 - **Dosen**             : Ipan Saepul Milal, S.Kom.
-- **Waktu / Sifat Ujian**: Take Home
 - **Kelas**             : TIF RP 23 CNS A
 
 ### Data Mahasiswa
-- **Nama** : [ISI NAMA ANDA DI SINI]
-- **NIM**  : [ISI NIM ANDA DI SINI]
+- **Nama** : Luthfy Arief
+- **NIM**  : 23552011045
 
 ---
 
@@ -25,7 +24,7 @@
 
 ## 3. Dokumentasi Screenshot
 
-Berikut adalah dokumentasi hasil pengerjaan Sistem Akademik Sederhana berbasis Laravel 12 + MySQL:
+Berikut adalah dokumentasi hasil pengerjaan Sistem Akademik Sederhana :
 
 ### A. Halaman Login
 *Menampilkan fitur login wajib menggunakan middleware auth.*  
