@@ -12,11 +12,26 @@ Proyek **Sistem Akademik Sederhana** ini dibuat untuk memenuhi tugas **Ujian Ten
 - **Pagination & Pencarian**: Menampilkan daftar data dengan fitur halaman (pagination) dan pencarian agar lebih efisien.
 - **UI Bootstrap 5**: Seluruh tampilan *dashboard* dan halaman CRUD dirancang bersih dan ringkas menggunakan integrasi Bootstrap.
 
-## Tangkapan Layar / Demo (Screenshots)
+## Dokumentasi Screenshot
 
-Aplikasi memiliki alur mulus dari halaman Login hingga navigasi CRUD di Dashboard. Berikut adalah demonstrasi visual penggunaannya:
+Berikut adalah tangkapan layar (screenshot) dari sistem ini sesuai dengan ketentuan UTS:
 
-![Demo Sistem Akademik](demo.webp)
+### 1. Halaman Login
+![Screenshot Login](screenshots/login.png)
+
+### 2. Dashboard
+![Screenshot Dashboard](screenshots/dashboard.png)
+
+### 3. CRUD Jurusan
+![Screenshot Jurusan](screenshots/jurusan.png)
+
+### 4. CRUD Mahasiswa
+![Screenshot Mahasiswa](screenshots/mahasiswa.png)
+
+### 5. CRUD Matakuliah
+![Screenshot Matakuliah](screenshots/matakuliah.png)
+
+> **Catatan untuk Mahasiswa**: Silakan ambil screenshot aplikasi di browser Anda dan simpan ke dalam folder `screenshots/` di dalam direktori proyek ini dengan nama file sesuai di atas.
 
 ## Prasyarat (Requirements)
 
