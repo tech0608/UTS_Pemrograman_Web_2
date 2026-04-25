@@ -1,102 +1,57 @@
-# Sistem Akademik Sederhana
+# LAPORAN UJIAN TENGAH SEMESTER
 
-Proyek **Sistem Akademik Sederhana** ini dibuat untuk memenuhi tugas **Ujian Tengah Semester (UTS)** Pemrograman Web. Aplikasi ini dibangun dengan menggunakan **Laravel 12** dan **MySQL**, serta memanfaatkan komponen antarmuka dari **Bootstrap 5**.
+**UNIVERSITAS TEKNOLOGI BANDUNG**  
+**DEPARTEMEN TEKNIK INFORMATIKA**
 
-## Fitur Utama
+---
 
-- **Autentikasi (Login Wajib)**: Pengguna harus login untuk mengakses fitur CRUD.
-- **Manajemen Jurusan**: Create, Read, Update, Delete data jurusan.
-- **Manajemen Mahasiswa**: Create, Read, Update, Delete data mahasiswa yang terelasi dengan tabel jurusan.
-- **Manajemen Matakuliah**: Create, Read, Update, Delete data matakuliah yang terelasi dengan tabel jurusan.
-- **Validasi Data**: Setiap form input memiliki validasi untuk memastikan data yang dimasukkan benar.
-- **Pagination & Pencarian**: Menampilkan daftar data dengan fitur halaman (pagination) dan pencarian agar lebih efisien.
-- **UI Bootstrap 5**: Seluruh tampilan *dashboard* dan halaman CRUD dirancang bersih dan ringkas menggunakan integrasi Bootstrap.
+### Informasi Ujian
+- **Mata Kuliah / SKS** : Pemrograman Web 2 / 3 SKS
+- **Dosen**             : Ipan Saepul Milal, S.Kom.
+- **Waktu / Sifat Ujian**: Take Home
+- **Kelas**             : TIF RP 23 CNS A
 
-## Dokumentasi Screenshot
+### Data Mahasiswa
+- **Nama** : [ISI NAMA ANDA DI SINI]
+- **NIM**  : [ISI NIM ANDA DI SINI]
 
-Berikut adalah tangkapan layar (screenshot) dari sistem ini sesuai dengan ketentuan UTS:
+---
 
-### 1. Halaman Login
-![Screenshot Login](screenshots/login.png)
+## 1. Link Github Source Code Project Laravel
+[https://github.com/tech0608/UTS_Pemrograman_Web_2](https://github.com/tech0608/UTS_Pemrograman_Web_2)
 
-### 2. Dashboard
-![Screenshot Dashboard](screenshots/dashboard.png)
+## 2. Link Database (.sql)
+[https://drive.google.com/drive/folders/1RFQpX3mnbJzYxy4CrsP5TzldNnFWTO28?usp=sharing](https://drive.google.com/drive/folders/1RFQpX3mnbJzYxy4CrsP5TzldNnFWTO28?usp=sharing)
 
-### 3. CRUD Jurusan
-![Screenshot Jurusan](screenshots/jurusan.png)
+## 3. Dokumentasi Screenshot
 
-### 4. CRUD Mahasiswa
-![Screenshot Mahasiswa](screenshots/mahasiswa.png)
+Berikut adalah dokumentasi hasil pengerjaan Sistem Akademik Sederhana berbasis Laravel 12 + MySQL:
 
-### 5. CRUD Matakuliah
-![Screenshot Matakuliah](screenshots/matakuliah.png)
+### A. Halaman Login
+*Menampilkan fitur login wajib menggunakan middleware auth.*  
+![Halaman Login](screenshots/login.png)
 
-> **Catatan untuk Mahasiswa**: Silakan ambil screenshot aplikasi di browser Anda dan simpan ke dalam folder `screenshots/` di dalam direktori proyek ini dengan nama file sesuai di atas.
+### B. Dashboard
+*Menampilkan dashboard setelah pengguna berhasil login, beserta navigasi ke masing-masing halaman CRUD.*  
+![Dashboard](screenshots/dashboard.png)
 
-## Prasyarat (Requirements)
+### C. CRUD Jurusan
+*Menampilkan fungsionalitas Tambah, Tampil, Edit, dan Hapus data Jurusan.*  
+![CRUD Jurusan](screenshots/jurusan.png)
 
-- PHP >= 8.2
-- Composer
-- Node.js & NPM
-- MySQL Database Server
+### D. CRUD Mahasiswa
+*Menampilkan fungsionalitas CRUD data Mahasiswa lengkap dengan relasi ke tabel Jurusan (Belongs To).*  
+![CRUD Mahasiswa](screenshots/mahasiswa.png)
 
-## Cara Instalasi
+### E. CRUD Matakuliah
+*Menampilkan fungsionalitas CRUD data Matakuliah lengkap dengan relasi ke tabel Jurusan (Belongs To).*  
+![CRUD Matakuliah](screenshots/matakuliah.png)
 
-1. **Clone repositori ini atau salin folder proyek ke lokal Anda**:
-   ```bash
-   git clone <link-repo-anda>
-   cd akademik
-   ```
+---
 
-2. **Install dependensi PHP & Node.js**:
-   ```bash
-   composer install
-   npm install
-   ```
-
-3. **Salin file konfigurasi environment**:
-   ```bash
-   cp .env.example .env
-   ```
-   Pastikan pada `.env` Anda sudah mengatur koneksi ke database Anda:
-   ```env
-   DB_DATABASE=sistem_akademik
-   DB_USERNAME=root
-   DB_PASSWORD=
-   ```
-
-4. **Generate Application Key**:
-   ```bash
-   php artisan key:generate
-   ```
-
-5. **Jalankan Migrasi & Seeder Database**:
-   Langkah ini akan membuatkan struktur tabel serta mengisikan data contoh (*dummy data*) beserta akun akses administrator.
-   ```bash
-   php artisan migrate:fresh --seed
-   ```
-
-6. **Kompilasi Aset Frontend (Vite)**:
-   ```bash
-   npm run build
-   ```
-
-7. **Jalankan Server Lokal**:
-   ```bash
-   php artisan serve
-   ```
-   Aplikasi Anda kini berjalan di `http://127.0.0.1:8000/`.
-
-## Data Login Bawaan (Seeder)
-
-Anda bisa menggunakan akun berikut yang otomatis terbuat melalui seeder untuk mencoba aplikasi:
-- **Email:** `admin@test.com`
-- **Password:** `password`
-
-## Relasi Database
-
-Proyek ini mendemonstrasikan implementasi *Eloquent Relationship* berikut:
-1. `Jurusan` *hasMany* `Mahasiswa` (1 Jurusan memiliki banyak Mahasiswa)
-2. `Jurusan` *hasMany* `Matakuliah` (1 Jurusan memiliki banyak Matakuliah)
-3. `Mahasiswa` *belongsTo* `Jurusan` (1 Mahasiswa memiliki 1 Jurusan)
-4. `Matakuliah` *belongsTo* `Jurusan` (1 Matakuliah memiliki 1 Jurusan)
+### *Keterangan Tambahan (Bonus yang dikerjakan):*
+1. **Validasi Form**: Tersedia pada setiap input form create/edit.
+2. **Seeder**: Tersedia data dummy untuk Jurusan, Mahasiswa, Matakuliah, dan User login.
+3. **Pagination**: Menampilkan data dalam beberapa halaman.
+4. **Search Data**: Fitur pencarian tersedia di setiap halaman index tabel.
+5. **UI Bootstrap**: Tampilan menggunakan framework Bootstrap 5.
